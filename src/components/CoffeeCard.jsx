@@ -45,7 +45,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
         <figure>
           <img
             src={photo}
-            className="w-[100px] h-[100px] rounded"
+            className="md:w-[100px] w-full md:h-[100px] rounded"
             alt="Movie"
           />
         </figure>

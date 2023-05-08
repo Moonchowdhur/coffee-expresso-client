@@ -5,6 +5,7 @@ import { CiCoffeeBean } from "react-icons/ci";
 import { FaBitbucket } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
 import CoffeeCard from "./components/CoffeeCard";
+import Footer from "./shared/Footer";
 const App = () => {
   const loadedCoffee = useLoaderData();
   const [coffees, setCoffees] = useState(loadedCoffee);
@@ -14,16 +15,16 @@ const App = () => {
     <>
       <div className="p-6 h-[500px] bg-no-repeat bg-cover bg-[url('https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg')]">
         <div className=" items-center flex ">
-          <div className="m-40 ms-52">
-            <h2 className="ms-36 text-4xl font-bold text-center font-['cursive'] text-white">
+          <div className="md:m-40 md:ms-52">
+            <h2 className="md:ms-36 text-4xl font-bold text-center font-['cursive'] text-white">
               Would you like a Cup of Delicious Coffee?
             </h2>
-            <p className="w-3/4 ms-52 text-white mt-3">
+            <p className="w-3/4 md:ms-52 text-white mt-3">
               It's coffee time - Sip & Savor - Relaxation in every sip! Get the
               nostalgia back!! Your companion of every moment!!! Enjoy the
               beautiful moments and make them memorable.
             </p>
-            <button className="ms-52 font-bold text-xl text-center px-2 py-1 mt-8 bg-orange-300 rounded-lg font-['cursive']">
+            <button className="md:ms-52 font-bold text-xl text-center px-2 py-1 mt-8 bg-orange-300 rounded-lg font-['cursive']">
               Learn More
             </button>
           </div>
@@ -125,6 +126,7 @@ const App = () => {
           />
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };
