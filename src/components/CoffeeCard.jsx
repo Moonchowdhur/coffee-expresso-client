@@ -50,11 +50,25 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Name:{name}</h2>
-          <div className="flex items-center gap-4">
-            <p>Quantity:{quantity}</p>
-            <p>Supplier:{supplier}</p>
-            <p>Taste:{taste}</p>
+          <h2 className="card-title">
+            <span className="font-bold">Name:</span>
+            {name}
+          </h2>
+          <div className="flex items-center gap-3">
+            <p>
+              {" "}
+              <span className="font-bold">Quantity: </span>
+              {quantity}
+            </p>
+            <p>
+              {" "}
+              <span className="font-bold">Supplier: </span>
+              {supplier}
+            </p>
+            <p>
+              <span className="font-bold">Taste: </span>
+              {taste}
+            </p>
           </div>
           <div className="flex items-center gap-4">
             <Link to={`/showcoffee/${_id}`}>
